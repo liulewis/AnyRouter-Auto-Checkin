@@ -39,8 +39,6 @@ jobs:
           SESSION: ${{ secrets.SESSION }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
-          # 带 secrets:write 权限的 PAT，供脚本回写 SESSION
-          GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python app.py
 
       - name: 🧹 clear old run jobs
